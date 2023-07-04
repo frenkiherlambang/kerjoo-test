@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,3 +16,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/test-grid', 'FrontendController@testGrid');
+Route::get('/test-flex', 'FrontendController@testFlex');
